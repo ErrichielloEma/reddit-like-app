@@ -1,0 +1,21 @@
+<div class="container" style="text-align: center;">
+  <form class="jumbotron , text-white" style="background-color : purple">
+  <h3>Spamming generator</h3>
+  <div>
+    <label for="spam">Cose inutili --> </label>
+    <input name="spam" #spam>
+  </div>
+  <div>
+    <label for="numero">Spamm --> </label>
+    <input name="numero" #numero>
+  </div>
+  <button (click) = "addSpamming(spam,numero)" class="btn text-white" style = "background-color : pink">
+    Start spamming
+  </button>
+</form>
+  <ul>
+    <li *ngFor="let spam of spamming">
+      <app-spam [procione]="spam"></app-spam>
+    </li>
+  </ul>
+</div>
