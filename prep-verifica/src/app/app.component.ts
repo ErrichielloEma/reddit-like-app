@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { SpamComponent } from './spam/spam.component';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
